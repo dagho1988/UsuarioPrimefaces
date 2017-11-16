@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15096293097030" configfile="/Registro/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="122" y="380" id="pf15096345716621" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15096345716632 pf15096345716633" path="index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Lista.xhtml" x="554" y="380" id="pf15096345716644" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15096345716632 pf15108471503800" path="Lista.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Nuevo.xhtml" x="338" y="178" id="pf15096345716645" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15108471503800" inlinks="pf15096345716633" path="Nuevo.xhtml"/>
+  <links id="pf15096345716632" target="pf15096345716644" source="pf15096345716621" outcome="Lista de Usuarios"/>
+  <links id="pf15096345716633" target="pf15096345716645" source="pf15096345716621" outcome="Nuevo Usuario"/>
+  <links id="pf15108471503800" target="pf15096345716644" source="pf15096345716645" outcome="Ir a Lista"/>
+</pageflow:Pageflow>

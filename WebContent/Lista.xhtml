@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Lista de Usuarios</title>
+</h:head>
+<h:body>
+
+	<h:form>
+	
+		<p:dataTable value="#{listaBean.lista}" var="user">
+		
+			<p:column headerText="Id">
+				<h:outputText value="#{user.userId}"></h:outputText>
+			</p:column>
+			
+			<p:column headerText="Nombres">
+				<h:outputText value="#{user.nombreCompleto}"></h:outputText>
+			</p:column>
+			
+			<p:column headerText="Direccion">
+				<h:outputText value="#{user.direccion}"></h:outputText>
+			</p:column>
+			
+			<p:column headerText="Telefono">
+				<h:outputText value="#{user.telefono}"></h:outputText>
+			</p:column>
+			
+			<p:column headerText="Email">
+				<h:outputText value="#{user.correoElectronico}"></h:outputText>
+			</p:column>
+			
+			<p:column headerText="Estado">
+				<h:outputText value="#{user.estado}"></h:outputText>
+			</p:column>
+			
+		</p:dataTable>
+	
+	</h:form>
+
+</h:body>
+</html>
